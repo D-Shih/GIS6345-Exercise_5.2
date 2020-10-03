@@ -1,0 +1,17 @@
+# Exercise 5.2, part 2
+
+def check_fermat(a, b, c, n):
+    if n <= 2:
+        print("This value of n does not test Fermat's Theorem")
+    elif (c ** n) == (a ** n) + (b ** n):
+        print("Holy smokes, Fermat was wrong!")
+    else:
+        print("No, that doesn't work.")
+     
+print("Please enter values to check Fermat's Theorem")
+a = int(input("Enter a value for a: "))
+b = int(input("Enter a value for b: "))
+c = int(input("Enter a value for c: "))
+n = int(input("Enter a value for n: "))
+
+check_fermat(a,b,c,n) 
